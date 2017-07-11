@@ -7,24 +7,25 @@
 </head>
 <body>
 
-  <h3>Create a New Food</h3>
-  <form class="food-form">
-    <label>name<input name="food-name"></label>
-    <br>
-    <label>calories<input name="food-calories"></label>
-    <br>
-    <input class="add-food" type="submit" value="Add Food">
-  </form>
+  <h1>Manage Foods</h1>
+  <section id="create-foods">
+    <h2>Add New Food:</h2>
+      <form id="food-form">
+        <input type="text" placeholder="Food Name" class="form-field" id="food-name-field">
+        <input type="number" placeholder="Calories" class="form-field" id="calories-field">
+        <input type="submit" value="Submit">
+      </form>
+  </section>
 
+  <table id='foods'>
+  <tr id='title-row'>
+    <th>Name</th>
+    <th>Calories</th>
+    <th>Delete</th>
+    <th></th>
+  </tr>
+</table>
 
-  <table class="foods_table">
-    <h2>Foods</h2>
-    <thead id="table_headers">
-      <td>Name</td>
-      <td>Calories</td>
-      <td>Delete</td>
-    </thead>
-  </table>
   <div id="foods"></div>
   <script src="main.bundle.js"></script>
 </body>
