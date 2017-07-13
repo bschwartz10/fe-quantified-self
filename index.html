@@ -48,18 +48,35 @@
     <h3>Totals</h3>
     <tr>
       <td>Goal Calories</td>
-      <td>2000</td>
+      <td class="goal-cal">2000</td>
     </tr>
     <tr>
       <td>Calories Consumed</td>
-      <td></td>
+      <td class="total-cal-consumed">0</td>
     </tr>
     <tr>
       <td>Remaining Calories</td>
-      <td></td>
+      <td class="remaining-cal">0</td>
     </tr>
   </table>
 
+<br><br>
+<form  action="/foods.html" method="get">
+  <input type="submit" name="" value="Create Food">
+</form>
+
+<div>
+  <h3>Filter by name</h3>
+  <input type="text" id='food-input' placeholder='Search for foods..'>
+</div>
+
+<table id='foods2'>
+  <h3>All Foods</h3>
+  <tr id='title-row'>
+    <th>Name</th>
+    <th>Calories</th>
+  </tr>
+</table>
   <script src="main.bundle.js"></script>
 </body>
 </html>

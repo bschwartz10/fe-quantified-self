@@ -1,3 +1,7 @@
 .image {
   zoom: 5%;
 }
+
+table, th, tr {
+   border: 1px solid black;
+}
